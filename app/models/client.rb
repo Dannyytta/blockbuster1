@@ -1,3 +1,4 @@
 class Client < ApplicationRecord
-    belong_to : movie
+    belongs_to :movie 
+
 end

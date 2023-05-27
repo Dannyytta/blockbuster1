@@ -1,7 +1,4 @@
-<p style="color: green"><%= notice %></p>
-
-<div class="container">
-  <div id="show-client">
+  <div id="clients">
     <table class="table table-dark table-hover">
       <span class="border border-danger-subtle">
       <thead>
@@ -13,21 +10,11 @@
           <th scope="col" colspan="3"></th>
         </tr>
       </thead>
-      </span>
       <tbody>
-        
-        <%= render @client %>        
-        
+        <% @clients.each do |client| %>
+          <%= render client %>
+        <% end %>
       </tbody>
     </table>
   </div>
-</div>
-
-
-
-<div>
-  <%= link_to "Edit this client", edit_client_path(@client) %> |
-  <%= link_to "Back to clients", clients_path %>
-
-  <%= button_to "Destroy this client", @client, method: :delete %>
 </div>

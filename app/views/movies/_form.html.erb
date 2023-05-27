@@ -10,13 +10,13 @@
       </ul>
     </div>
   <% end %>
-
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+  <br>
+  <div class= "form-group" style="color: blue">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control" %>
   </div>
-
+  <br>
   <div>
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-warning"  %>
   </div>
 <% end %>
